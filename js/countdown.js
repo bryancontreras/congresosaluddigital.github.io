@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Fecha del evento (24 de Septiembre de 2025)
-    const eventDate = new Date('2025-09-24T00:00:00').getTime();
+    const eventDate = new Date('2025-09-25T00:00:00').getTime();
     
     // Función para actualizar el contador
     function updateCounter() {
