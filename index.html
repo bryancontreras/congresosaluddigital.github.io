@@ -14,15 +14,24 @@
     <!-- Header/Navegación -->
     <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <svg width="40" height="40" viewBox="0 0 50 50" class="me-2">
-                    <rect x="5" y="5" width="15" height="15" rx="3" fill="#FF6B6B" />
-                    <rect x="8" y="8" width="15" height="15" rx="3" fill="#E63946" />
-                    <rect x="20" y="20" width="15" height="15" rx="3" fill="#38B1C1" />
-                    <rect x="30" y="10" width="10" height="10" rx="2" fill="#0F3B5F" />
-                </svg>
-                <span class="fw-bold" style="color: #0F3B5F;">Segundo Congreso de</span> <span class="fw-bold" style="color: #E63946;">SALUD DIGITAL</span>
-            </a>
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <!-- Escudo de la UNAM -->
+            <img src="images/escudo-unam.png" alt="Escudo UNAM" height="40" class="me-2">
+            
+            <!-- Logo del congreso -->
+            <svg width="40" height="40" viewBox="0 0 50 50" class="me-2">
+                <rect x="5" y="5" width="15" height="15" rx="3" fill="#FF6B6B" />
+                <rect x="8" y="8" width="15" height="15" rx="3" fill="#E63946" />
+                <rect x="20" y="20" width="15" height="15" rx="3" fill="#38B1C1" />
+                <rect x="30" y="10" width="10" height="10" rx="2" fill="#0F3B5F" />
+            </svg>
+            
+            <!-- Título en dos líneas -->
+            <div class="d-flex flex-column">
+                <span class="fw-bold" style="color: #0F3B5F; line-height: 1.1;">Segundo Congreso de</span>
+                <span class="fw-bold" style="color: #E63946; line-height: 1.1;">SALUD DIGITAL</span>
+            </div>
+        </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                 <span class="navbar-toggler-icon"></span>
             </button>
