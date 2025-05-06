@@ -51,6 +51,15 @@ body {
     color: var(--primary-color);
 }
 
+.date-location {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(56, 177, 193, 0.2);
+}
+
+.date-location:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(56, 177, 193, 0.2);
+}
 /* Fecha y ubicación */
 .date-location {
     background-color: rgba(56, 177, 193, 0.1);
