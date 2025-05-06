@@ -19,12 +19,8 @@
             <img src="images/escudo-unam.png" alt="Escudo UNAM" height="40" class="me-2">
             
             <!-- Logo del congreso -->
-            <svg width="40" height="40" viewBox="0 0 50 50" class="me-2">
-                <rect x="5" y="5" width="15" height="15" rx="3" fill="#FF6B6B" />
-                <rect x="8" y="8" width="15" height="15" rx="3" fill="#E63946" />
-                <rect x="20" y="20" width="15" height="15" rx="3" fill="#38B1C1" />
-                <rect x="30" y="10" width="10" height="10" rx="2" fill="#0F3B5F" />
-            </svg>
+            <!-- Reemplazar el SVG por la imagen del logo -->
+            <img src="images/Logo principal.png" alt="Logo Congreso Salud Digital" height="40" class="me-2">
             
             <!-- Título en dos líneas -->
             <div class="d-flex flex-column">
@@ -68,9 +64,24 @@
         
         <div class="container position-relative d-flex align-items-center justify-content-center h-100" style="z-index: 2;">
             <div class="text-center py-5">
-                <div class="date-location d-inline-block px-4 py-2 mb-4 rounded-pill">
-                    <span class="me-2">📅 24 ❖ 25 ❖ 26 SEPTIEMBRE, 2025</span> | <span class="ms-2">📍 Facultad de Ingeniería ❖ Facultad de Medicina, UNAM</span>
+              <div class="date-location d-inline-block px-4 py-3 mb-4 rounded-pill" style="background: rgba(56, 177, 193, 0.15); backdrop-filter: blur(5px);">
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                    <!-- Fechas con mejor estilo -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-calendar-event me-2" style="color: #E63946; font-size: 1.2rem;"></i>
+                        <span class="fw-semibold" style="color: #0F3B5F;">24 <span style="color: #38B1C1;">❖</span> 25 <span style="color: #38B1C1;">❖</span> 26 SEPTIEMBRE, 2025</span>
+                    </div>
+                    
+                    <!-- Separador más estilizado -->
+                    <div style="width: 2px; height: 24px; background: rgba(15, 59, 95, 0.3);"></div>
+                    
+                    <!-- Ubicación con mejor estilo -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill me-2" style="color: #E63946; font-size: 1.2rem;"></i>
+                        <span class="fw-semibold" style="color: #0F3B5F;">Facultad de Ingeniería <span style="color: #38B1C1;">❖</span> Facultad de Medicina, UNAM</span>
+                    </div>
                 </div>
+            </div>
                 
                 <h1 class="display-4 fw-bold mb-3" style="color: #0F3B5F;">Segundo Congreso de <span style="color: #E63946;">SALUD DIGITAL</span></h1>
                 <p class="lead mb-4" style="color: #0F3B5F;">SALUD BASADA EN VALOR</p>
