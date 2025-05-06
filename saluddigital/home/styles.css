@@ -1,0 +1,246 @@
+/* Variables de colores */
+:root {
+    --primary-color: #0F3B5F;
+    --secondary-color: #38B1C1;
+    --accent-color: #E63946;
+    --text-color: #333333;
+    --light-bg: #f5f9fd;
+    --white: #ffffff;
+    --coral: #FF6B6B;
+    --teal: #30BFBF;
+    --navy: #1D3557;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    position: relative;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(56, 177, 193, 0.2), rgba(230, 57, 70, 0.2));
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+/* Contador regresivo */
+.counter-box {
+    background-color: rgba(56, 177, 193, 0.1);
+    min-width: 100px;
+}
+
+.counter-box h3 {
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+/* Fecha y ubicación */
+.date-location {
+    background-color: rgba(56, 177, 193, 0.1);
+}
+
+/* Botones */
+.btn-registro {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-registro:hover {
+    background-color: #d12836;
+    color: white;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: var(--primary-color);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+/* Sección de ponentes */
+.speaker-card {
+    transition: all 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.speaker-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.speaker-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.speaker-card:hover .speaker-img img {
+    transform: scale(1.1);
+}
+
+.speaker-position {
+    color: var(--secondary-color);
+}
+
+.speaker-mini {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Timeline para agenda */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-content {
+    position: relative;
+    width: calc(50% - 40px);
+}
+
+.timeline-right .timeline-content {
+    margin-left: calc(50% + 40px);
+}
+
+.timeline-badge {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Sección de inscripción */
+.bg-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Patrocinadores */
+.sponsor-logo {
+    height: 100px;
+}
+
+.sponsor-logo img {
+    max-height: 100%;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.sponsor-logo:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Mapa de la sede */
+.venue-map {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Iconos de contacto */
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+/* Formulario */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(15, 59, 95, 0.25);
+}
+
+/* Media queries */
+@media (max-width: 991.98px) {
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+    }
+    
+    .timeline-line {
+        left: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
