@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Congreso 2025</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Registro Congreso 2025</h1>
+  <form id="registroForm" enctype="multipart/form-data" method="POST" action="/upload">
+    <!-- Datos básicos -->
+    <label>Nombre completo:<input type="text" name="nombre" required></label>
+    <label>Email:<input type="email" name="email" required></label>
+    <label>Tipo de participación:
+      <select id="participacion" name="participacion" required>
+        <option value="asistencia">Asistencia</option>
+        <option value="poster">Póster científico</option>
+        <option value="hackathon">Hackathon</option>
+        <option value="stand">Stand expositor</option>
+      </select>
+    </label>
+
+    <!-- Sección póster -->
+    <div id="seccionPoster" class="oculto">
+      <label>Título del póster:<input type="text" name="tituloPoster"></label>
+      <label>Adjuntar archivo PDF:<input type="file" name="archivoPoster" accept="application/pdf"></label>
+    </div>
+
+    <!-- Sección hackathon -->
+    <div id="seccionHack" class="oculto">
+      <label>Nombre equipo:<input type="text" name="nombreEquipo"></label>
+      <label>Integrantes:<textarea name="integrantes"></textarea></label>
+    </div>
+
+    <!-- Sección stand -->
+    <div id="seccionStand" class="oculto">
+      <label>Empresa/Organización:<input type="text" name="empresa"></label>
+      <label>Descripción stand:<textarea name="descStand"></textarea></label>
+    </div>
+
+    <button type="submit">Enviar registro</button>
+  </form>
+  <script src="js/form.js"></script>
+</body>
+</html>
