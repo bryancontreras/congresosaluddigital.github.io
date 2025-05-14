@@ -236,6 +236,108 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(15, 59, 95, 0.25);
 }
 
+
+  h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-color);
+  }
+
+  input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="file"] {
+  padding: 8px 0;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  /* Mensajes */
+.message {
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+  }
+  
+  #errorMessage {
+    background-color: #fdecea;
+    color: var(--accent-color);
+    border-left: 4px solid var(--accent-color);
+  }
+  
+  #loadingMessage {
+    background-color: #e8f4fd;
+    color: var(--secondary-color);
+    border-left: 4px solid var(--secondary-color);
+    text-align: center;
+  }
+  
+  #successMessage {
+    background-color: #eafaf1;
+    color: var(--success-color);
+    border-left: 4px solid var(--success-color);
+  }
+
 /* Media queries */
 @media (max-width: 991.98px) {
     .timeline-content {
